@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.form-section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.form-section input{
+    padding:12px;
+    border:1px solid  #ddd;
+    border-radius:5px;
+}
+
+.form-section button{
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    padding:12px;
+}
+
+.form-section button:hover{
+    background:#0056b3;
+}
+
+.search-section{
+    margin-bottom:20px;
+}
+
+.search-section input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+.edit{
+    background:orange;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.delete{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .form-section{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        min-width:700px;
+    }
+}
